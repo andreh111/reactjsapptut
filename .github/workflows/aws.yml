@@ -55,7 +55,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: public.ecr.aws/g9i1c4z2/reactjsapptut
+        ECR_REPOSITORY: reactjsapptut
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
